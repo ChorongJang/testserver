@@ -1,5 +1,6 @@
 var http = require('http');
 var url = require('url');
+var color = require('colors');
 
 http.createServer(function (req, res){
 
@@ -9,5 +10,5 @@ http.createServer(function (req, res){
 
 }).listen(8080, function(){
 
-	 console.log('create server');
+	 console.log('create server'.red);
 	});
